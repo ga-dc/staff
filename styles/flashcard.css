@@ -212,3 +212,24 @@ button.hidden {
   }
 
 }
+
+.teams-nav{
+  display:block;
+  text-align:center;
+  margin-top:1em;
+}
+
+.teams-nav > a{
+  border:1px solid #000; 
+  padding:.5em 1em;
+  margin:0 .5em 0 0;
+  border-radius: 3px;
+  cursor:pointer;
+  transition: all .2s ease;
+  -webkit-transition: all .2s ease;
+}
+
+.teams-nav > a.active{
+  background: #000;
+  color: #fff;
+}
