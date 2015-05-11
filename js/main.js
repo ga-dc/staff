@@ -1,10 +1,11 @@
-$(document).ready(resizeCard);
+Tabletop.init({ 
+  key: "https://docs.google.com/spreadsheets/u/1/d/1_bU0idTkrU4c0P3Y4ha3KeULIQ8fL22t8mffOETafTA/pubhtml",
+  callback: sheetLoad,
+  simpleSheet: true 
+})
 
-$(window).resize(resizeCard);
-
-
-function resizeCard() {
-  $('.profile-card + .profile-card').css({
-    'max-width': $('.profile-card:first-child').width()
-    });
+function sheetLoad( data, tabletop ){
+  for( var profile in data ){
+    console.log( data[profile])
+  }
 }
