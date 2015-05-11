@@ -1,5 +1,5 @@
 Tabletop.init({ 
-  key: "https://docs.google.com/spreadsheets/u/1/d/1_bU0idTkrU4c0P3Y4ha3KeULIQ8fL22t8mffOETafTA/pubhtml",
+  key: "https://docs.google.com/spreadsheets/d/1_bU0idTkrU4c0P3Y4ha3KeULIQ8fL22t8mffOETafTA/pubhtml",
   callback: sheetLoad,
   simpleSheet: true 
 })

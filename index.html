@@ -18,8 +18,8 @@
   </div>
   <script id="employee-template" type="text/x-handlebars-template">
     {{#each employees}}
-      <div class="profile-card" id="tyler">
-	<img src="{{this.Image}}" alt="Tyler">
+      <div class="profile-card">
+	<img src="{{this.Image}}" alt="{{this.Name}}">
 	<a href='#'><h2>{{this.Name}}</h2></a>
       </div>
     {{/each}}
