@@ -15,13 +15,18 @@
     <h1>GA Staff</h1>
   </header>
   <div class="content js-profiles">
-    <div class="profile-card" id="tyler">
-      <img src="photos/Tyler Brooks.png" alt="Tyler">
-      <a href='samplestudent.html'><h2>Tyler Brooks</h2></a>
-    </div>
   </div>
+  <script id="employee-template" type="text/x-handlebars-template">
+    {{#each employees}}
+      <div class="profile-card" id="tyler">
+	<img src="{{this.Image}}" alt="Tyler">
+	<a href='#'><h2>{{this.Name}}</h2></a>
+      </div>
+    {{/each}}
+  </script>
   <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
   <script src="js/tabletop.js"></script>
+  <script src="js/handlebars-v3.0.3.js"></script>
   <script src="js/main.js"></script>
   <script src="js/flash.js"></script>
 </body>

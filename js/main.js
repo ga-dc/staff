@@ -5,7 +5,12 @@ Tabletop.init({
 })
 
 function sheetLoad( data, tabletop ){
-  for( var profile in data ){
-    console.log( data[profile])
-  }
+  render( data )
+}
+
+function render( context ){
+  var template = $("#employee-template").html()
+  var compile = Handlebars.compile( template )
+  var html = compile( { employees: context } )
+  $(".js-profiles").html( html ).show()
 }
