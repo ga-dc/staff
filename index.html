@@ -13,14 +13,14 @@
 <body>
   <header>
     <h1>GA Staff</h1>
-    <nav class="js-teams-nav">
+    <nav class="js-teams-nav teams-nav">
     </nav>
   </header>
   <div class="content js-profiles">
   </div>
   <script id="employee-template" type="text/x-handlebars-template">
     {{#each employees}}
-      <div class="profile-card">
+      <div class="profile-card {{this.Team}}">
 	<img src="{{this.Image}}" alt="{{this.Name}}">
 	<a href='#'><h2>{{this.Name}}</h2></a>
       </div>
@@ -29,6 +29,7 @@
   <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
   <script src="js/tabletop.js"></script>
   <script src="js/handlebars-v3.0.3.js"></script>
+  <script src="js/isotope.pkgd.min.js"></script>
   <script src="js/main.js"></script>
   <script src="js/flash.js"></script>
 </body>
